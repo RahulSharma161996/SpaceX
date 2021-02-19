@@ -4,9 +4,6 @@
     </div>
 
     <div class="cardflex col-sm-9 col-md-9 col-lg-9 col-xl-9">
-        <div *ngIf="cardsService.loader" class="spinner-border spin" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
         <div *ngIf="!cardsService.loader && cardsService.allRecords.length > 0" class="row spaceXCards">
             <div class="card spacecard" *ngFor="let data of cardsService.allRecords">
                 <div class="image">
@@ -34,4 +31,7 @@
         </div>
     </div>
 
+</div>
+<div *ngIf="cardsService.loader" class="spinner-border spin" role="status">
+    <span class="sr-only">Loading...</span>
 </div>

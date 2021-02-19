@@ -1,6 +1,7 @@
 .content-wrapper{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     height: 100%;
     width: 100%;
     background-color: #F2F2F2;
@@ -21,4 +22,8 @@
 
 .marginT10{
     margin-top: 10px;
+}
+
+:host {
+    height: 100%
 }
