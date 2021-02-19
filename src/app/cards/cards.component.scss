@@ -13,7 +13,7 @@
 
 .cardflex{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
 }
 
@@ -96,9 +96,6 @@
         margin: 8px;
         min-width: 180px;
     }
-    .cardflex{
-        justify-content: flex-start;
-    }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1099px){
@@ -113,9 +110,6 @@
     .spacecard{
         margin: 5px;
         min-width: 170px;
-    }
-    .cardflex{
-        justify-content: flex-start;
     }
 }
 
@@ -136,9 +130,6 @@
         }
         .spaceXCards{
             margin-left: 35px;
-        }
-        .cardflex{
-            justify-content: flex-start;
         }
     }
 
@@ -193,5 +184,8 @@
         }
         .image{
             height: 230px;
+        }
+        .cardflex{
+            justify-content: center;
         }
     }
