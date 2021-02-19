@@ -1,1 +1,37 @@
-<p>cards works!</p>
+<div class="flex-wrapper row">
+    <div class="filterArea col-sm-3 col-md-3 col-lg-3">
+        <app-filters class="centerAlign"></app-filters>
+    </div>
+
+    <div class="cardflex col-sm-9 col-md-9 col-lg-9">
+        <div *ngIf="cardsService.loader" class="spinner-border spin" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div *ngIf="!cardsService.loader && cardsService.allRecords.length > 0" class="row spaceXCards">
+            <div class="card spacecard" *ngFor="let data of cardsService.allRecords">
+                <div class="image">
+                    <img class="imgtag" src="{{data.links.mission_patch}}">
+                </div>
+                <div class="desc">
+                    <span class="title">{{data.mission_name}} #{{data.flight_number}}</span>
+                    <div class="wrap">
+                        <span class="labels">Mission Name</span>
+                        <span class="label-value">:{{data.mission_name}}</span>
+                    </div>
+                    <div class="wrap">
+                        <span class="labels">Launch Year:</span>
+                        <span class="label-value">{{data.launch_year}}</span>
+                    </div>
+                    <div class="wrap">
+                        <span class="labels">Successful Launch:</span>
+                        <span class="label-value">{{data.launch_success}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="centreText" *ngIf="!cardsService.loader && cardsService.allRecords.length == 0">
+            No records found
+        </div>
+    </div>
+
+</div>
