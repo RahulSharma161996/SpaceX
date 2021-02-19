@@ -1,0 +1,26 @@
+<div class="filter-wrapper">
+    <div class="title">Filters</div>
+    <div class="filterCategories">
+        <span class="filterTitle">Launch Year</span>
+        <div class="boxGroup">
+            <div [ngClass]="filterCondition.launch_year == launchYear? 'highlight':''" class="filterbox" (click)="filterData('launch_year',launchYear)" *ngFor="let launchYear of launchYearArray">
+                {{launchYear}}
+            </div>
+        </div>
+        
+    </div>
+    <div class="filterCategories">
+        <span class="filterTitle">Successful Launch</span>
+        <div class="boxGroup">
+            <div [ngClass]="filterCondition.launch_success == true? 'highlight':''" class="filterbox" (click)="filterData('launch_success',true)">True</div>
+            <div [ngClass]="filterCondition.launch_success == false? 'highlight':''" class="filterbox" (click)="filterData('launch_success',false)">False</div>
+        </div>
+    </div>
+    <div class="filterCategories">
+        <span class="filterTitle">Successful Landing</span>
+        <div class="boxGroup">
+            <div [ngClass]="filterCondition.land_success == true? 'highlight':''" class="filterbox" (click)="filterData('land_success',true)">True</div>
+            <div [ngClass]="filterCondition.land_success == false? 'highlight':''" class="filterbox"(click)="filterData('land_success',false)">False</div>
+        </div>
+    </div>
+</div>

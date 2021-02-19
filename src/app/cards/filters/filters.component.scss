@@ -1,0 +1,90 @@
+.filter-wrapper{
+    width: 20%;
+    min-width: 250px;
+    background: white;
+    max-width: 600px;
+    padding: 10px 5px 30px;
+    margin-top: 10px;
+}
+
+.filterCategories{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filterbox{
+    background-color: #C5E19B;
+    text-align: center;
+    padding: 8px 20px;
+    width: 80px;
+    border-radius: 4px;
+    margin: 5px 20px;
+    cursor: pointer;
+}
+
+.highlight{
+    background-color: #7DBA01;
+}
+
+.boxGroup{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filterTitle{
+    font-size: 14px;
+    padding: 5px 20px;
+    border-bottom: 1px solid gray;
+    margin: 0 5px 5px;
+    text-align: center;
+}
+
+.title{
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1250px){
+    .filterbox{
+        margin: 5px 10px;
+    }
+    .filter-wrapper{
+        min-width: 215px;
+    }
+    }
+
+// @media only screen and (max-width: 1060px){
+//     .filterbox{
+//         margin: 5px 3px;
+//     }
+//     .filter-wrapper{
+//         min-width: 200px;
+//     }
+// }
+
+@media only screen and (min-width: 800px) and (max-width: 1024px){
+    .filterbox{
+        margin: 6px 14px;
+    }
+    .filter-wrapper{
+        min-width: 230px;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 799px){
+    .filterbox{
+        margin: 5px 3px;
+    }
+    .filter-wrapper{
+        min-width: 185px;
+    }
+}
+
+@media only screen and (max-width: 699px) {
+    .filterbox{
+        margin: 8px 20px;
+    }
+    .filter-wrapper{
+        min-width: 250px;
+    }
+}

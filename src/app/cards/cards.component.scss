@@ -1,0 +1,194 @@
+.flex-wrapper{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.cardArea{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cardflex{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.spaceXCards{
+    // margin-left: 40px;
+    display: flex;
+    // justify-content: center;
+    max-width: 1440px;
+}
+
+.card{
+    margin: 10px;
+    width: 22%;
+    min-width: 220px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    .title{
+        color: #4C529D;
+        font-weight: 500;
+    }
+    .labels{
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .label-value{
+        color: #4C529D;
+        font-size: 14px;
+    }
+}
+
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.spin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.centreText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.image{
+    background-color: #F2F2F2;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 1580px){
+.spaceXCards{
+    margin-left: unset;
+}
+}
+
+
+
+@media only screen and (min-width: 1100px) and (max-width: 1370px){
+    .imgtag{
+        width: 160px;
+        height: 160px;
+        align-self: center;
+    }
+    .image{
+        height: 160px;
+    }
+    .spacecard{
+        margin: 8px;
+        min-width: 180px;
+    }
+    .cardflex{
+        justify-content: flex-start;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1099px){
+    .imgtag{
+        width: 150px;
+        height: 150px;
+        align-self: center;
+    }
+    .image{
+        height: 150px;
+    }
+    .spacecard{
+        margin: 5px;
+        min-width: 170px;
+    }
+    .cardflex{
+        justify-content: flex-start;
+    }
+}
+
+
+
+    @media only screen and (min-width: 800px) and (max-width: 1024px){
+        .imgtag{
+            width: 220px;
+            height: 220px;
+            align-self: center;
+        }
+        .image{
+            height: 220px;
+        }
+        .spacecard{
+            margin: 10px;
+            min-width: 240px;
+        }
+        .spaceXCards{
+            margin-left: 35px;
+        }
+        .cardflex{
+            justify-content: flex-start;
+        }
+    }
+
+    @media only screen and (min-width: 700px) and (max-width: 799px){
+        .imgtag{
+            width: 180px;
+            height: 180px;
+            align-self: center;
+        }
+        .image{
+            height: 180px;
+        }
+        .spacecard{
+            margin: 10px;
+            min-width: 200px;
+        }
+        .spaceXCards{
+            margin-left: 40px;
+        }
+        .cardflex{
+            justify-content: flex-start;
+        }
+    }
+
+    @media only screen and (max-width: 699px) {
+        .flex-wrapper{
+            flex-direction: column !important;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        .spaceXCards{
+            margin: 0;
+            justify-content: center;
+        }
+        .filterArea{
+            width: 100%;
+            max-width: unset !important;
+        }
+        .centerAlign{
+            display: flex;
+            justify-content: center;
+        }
+        .card{
+            min-width: 250px;
+            margin: 10px;
+        }
+        .imgtag{
+            width: 230px;
+            height: 230px;
+            align-self: center;
+        }
+        .image{
+            height: 230px;
+        }
+    }
